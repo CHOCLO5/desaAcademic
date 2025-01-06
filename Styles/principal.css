@@ -1,7 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*117533 2F864D 4D9866 6AA980 88BA99 A6CBB3 C4DCCC E1EEE5*/
 *{
     margin: 0;
     padding: 0;
     border: none;
     outline: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: "Hind Mysuru", serif;
+    background-color: #fff !important;
+}
+
+a{
+  text-decoration: none;  
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    background-color: #2F864D;
+}
+
+.company-brand{
+    display: flex;
+    align-items: center;
+}
+
+.img-logo{
+    width: 60px;
+}
+
+.name-logo{
+    letter-spacing: -7%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    padding-bottom: 0rem;
+    color: #fff;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.link a{
+    position: relative;
+    color: #e1eee5;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -7%;
+}
+
+.link a{
+    background-color: #4d9866;
+    padding: 0.5rem 1rem;
+    padding-bottom: 0rem;
+    border-radius: 11px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.link a:hover{
+    background-color: #e1eee5;
+    color: #4d9866;
+    font-weight: 600;
+}
+
+.user{
+    color: #e1eee5;
+    font-size: 2rem;
+    background-color: #4d9866;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.user:hover{
+    background-color: #e1eee5;
+    color: #4d9866;
+}
+
+.sub-nav-link{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem; 
+    background-color: rgb(225,238,229,0.25);
+}
+
+.sub-link a{
+    color: #4d9866;
+    position: relative;
+}
+
+.sub-link a::after{
+    content: "";
+    position: absolute;
+    color: #4d9866;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #4d9866;
+    transition: all 0.3s ease;
+}
+
+.sub-link a:hover::after{
+    width: 100%;
 }
