@@ -78,7 +78,6 @@ nav{
 .link a:hover{
     background-color: #e1eee5;
     color: #4d9866;
-    font-weight: 600;
 }
 
 .user{
@@ -129,4 +128,64 @@ nav{
 
 .sub-link a:hover::after{
     width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+
+/*Carrusel*/
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: auto;
+    overflow: hidden; /* Oculta el contenido que sale del contenedor */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+.carousel-item {
+    min-width: 100%; /* Cada elemento ocupa el ancho completo */
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e1eee5;
+    /*background-color: rgb(225,238,229,0.25);*/
+    color: #2F864D;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: -10px;
+}
+
+.carousel-btn.next {
+    right: -10px;
+}
+
+.carousel-btn:hover {
+    background: rgba(47,134,77, 0.7);
+    color: #e1eee5;
 }
