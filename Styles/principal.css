@@ -189,3 +189,90 @@ nav{
     background: rgba(47,134,77, 0.7);
     color: #e1eee5;
 }
+
+/*Articulo*/
+article{
+    max-width: 980px;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: rgb(225,238,229,0.31);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+}
+article .header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+article .header i{
+    background-color: #323232;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
+}
+
+.article-info{
+    line-height: 1.25rem;
+}
+
+.article-info h3{
+    padding-top: .25rem;
+    font-weight: 200;
+    letter-spacing: 3%;
+    color: #464646;
+}
+
+.article-info p{
+    margin-top: 0;
+    color: #464646;
+}
+
+header{
+    padding: 1rem 2rem;
+}
+
+header h2{
+    color: #323232;
+}
+
+header p{
+    color: #464646;
+}
+
+article img{
+    padding-top: 1rem;
+}
+
+article footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.reward{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #464646;
+}
+
+.default-btn{
+    background-color: #4d9866;
+    padding: 0.70rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #e1eee5;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.default-btn:hover{
+    color: #4d9866;
+    background-color: #e1eee5;
+}
