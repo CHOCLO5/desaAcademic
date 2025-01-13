@@ -265,6 +265,7 @@ article footer{
 .default-btn{
     background-color: #4d9866;
     padding: 0.70rem 2rem;
+    margin-right: 1.5rem;
     font-size: 1.5rem;
     font-weight: 300;
     color: #e1eee5;
@@ -275,4 +276,71 @@ article footer{
 .default-btn:hover{
     color: #4d9866;
     background-color: #e1eee5;
+}
+
+
+/*Estilo del modal*/
+.modal{
+    display: none; /*Oculto por defecto*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);/*Fondo*/
+    z-index: 10;/*Lo llevamos hasta el frente*/
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+    max-width: 900px;
+}
+
+.modal-content header{
+    line-height: 4rem;
+    padding: 1rem 0;
+}
+
+.modal-content .title{
+    color: #117533;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.modal-content .sub-title{
+    color: #2F864D;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.event-information{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 4rem;
+    color: #464646;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.modal-content p{
+    text-align: justify;
+    font-size: 1.25rem;
+    color: #323232;
+}
+
+.modal-content img{
+    max-width: 100%;
+}
+
+.close{/*Botón de cierre*/
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
