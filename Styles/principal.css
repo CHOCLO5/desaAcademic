@@ -337,10 +337,11 @@ article footer{
     max-width: 100%;
 }
 
-.close{/*Botón de cierre*/
+.close{  /*Botón de cierre*/
     position: absolute;
+    color: #e1eee5;
     top: 10px;
     right: 20px;
-    font-size: 1.5rem;
+    font-size: 3rem;
     cursor: pointer;
 }
