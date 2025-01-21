@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <title>Styles Guide</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Hind Mysuru", serif;
+            background-color: #fff !important;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover, a:focus{
+            text-decoration: none;
+        }
+
+        .container{
+            max-width: 900px;
+            padding: 1rem 2rem;
+            margin: 1rem auto;
+        }
+
+        .nav-link{
+            padding: 1.5rem 0rem;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        .link a{
+            cursor: pointer;
+            color: #177533;
+            font-weight: 500;
+            padding: 0rem 0.5rem;
+            padding-top: 0.40rem;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .link a::after{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #177533;
+            transition: all 0.3s ease;
+        }
+
+        .link a:hover::after{
+            width: 100%;
+        }
+
+        header h1{
+            text-align: center;
+            font-weight: 500;
+            color: #464646;
+        }
+
+        .tipo {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1rem;
+        }
+
+        section div h2{
+            font-weight: 400;
+            color: #464646;
+            margin-bottom: 4rem;
+        }
+
+        hr{
+            background-color: #868686;
+            height: 1px;
+            width: 80%;
+            line-height: 1;
+        }
+
+        section div .ejemplo{
+            font-size: 10rem;
+            line-height: 0.5;
+            font-weight: 600;
+            color: #177533;
+        }
+
+        section div .fuente{
+            font-size: 2rem;
+            font-weight: 300;
+            color: #363636;
+        }
+
+        section div .muestra{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+
+        .muestra .tamanio{            
+            font-size: 0.75rem;
+            color: #868686;
+        }
+
+        .muestra .etiqueta{
+            font-size: 0.95rem;
+            color: #868686;
+            font-weight: 600;
+        }
+
+        section h2{
+            font-weight: 400;
+            color: #464646;
+            margin-bottom: 2rem;
+        }
+
+        .colores{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+
+        .color{
+            width: 160px;
+            height: 120px;
+            border-radius: 10px;
+            font-size: 1rem;
+            display: flex;
+            padding-left: .75rem;
+            align-items: flex-end;
+        }
+
+        .botones h3{
+            font-size: 1.75rem;
+            font-weight: 300;
+            color: #868686;
+        }
+
+        .botones{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .btn-principal-default{
+            background-color: #4d9866;
+            padding: 0.70rem 2rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #e1eee5;
+            border-radius: 10px;
+        }
+
+        .btn-principal-hover{
+            background-color: #4d9866;
+            padding: 0.70rem 2rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #e1eee5;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-principal-hover:hover{
+            color: #4d9866;
+            background-color: #e1eee5;
+        }
+
+        .btn-principal-disable{
+            background-color: #e1eee5;
+            padding: 0.70rem 2rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #4D9866;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul class="nav-link">
+            <li class="link"><a href="#">Tipografía</a></li>
+            <li class="link"><a href="">Paleta de color</a></li>
+            <li class="link"><a href="#">Botones</a></li>
+            <li class="link"><a href="#">Formularios</a></li>
+            <li class="link"><a href="#">Iconos</a></li>
+            <li class="link"><a href="#">Más cosas</a></li>
+        </ul>
+    </nav>
+
+    <header style="margin: 1rem auto;" class="container">
+        <h1>Style Guide</h1>
+    </header>
+    
+    <section class="container tipo">
+        <div>
+            <h2>Tipografía<hr></h2>
+            <span class="ejemplo">Aa</span>
+            <p class="fuente">Montserrat, "Hind Mysuru"</p>
+        </div>
+        <div>
+            <div class="muestra">
+                <p class="tamanio">2.5rem</p>
+                <p class="etiqueta">H1</p>
+                <p style="font-size: 2.5rem; ">OnLinces</p>
+            </div>
+            <div class="muestra">
+                <p class="tamanio">2rem</p>
+                <p class="etiqueta">H2</p>
+                <p style="font-size: 2rem; ">Desarrollo Academico</p>
+            </div>
+            <div class="muestra">
+                <p class="tamanio">1.75rem</p>
+                <p class="etiqueta">H3</p>
+                <p style="font-size: 1.75rem; ">Psicología</p>
+            </div>
+            <div class="muestra">
+                <p class="tamanio">1rem</p>
+                <p class="etiqueta">p</p>
+                <p style="font-size: 1rem; ">El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Paleta de colores<hr style="width: 100%;"></h2>
+        <div class="colores">
+            <p style="background-color: #177533; color: #fff;" class="color">#177533</p>
+            <p style="background-color: #2F864D; color: #fff;" class="color">#2F864D</p>
+            <p style="background-color: #4D9866; color: #fff;" class="color">#4D9866</p>
+            <p style="background-color: #6AA980; color: #fff;" class="color">#6AA980</p>
+            <p style="background-color: #E1EEE5; color: #177533;" class="color">#E1EEE5</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Botones<hr style="width: 100%;"></h2>
+        <div>
+            <div class="botones">
+                <h3>Boton principal</h3>
+                <button class="btn-principal-default">Default</button>
+                <button class="btn-principal-hover">Hover</button>
+                <button class="btn-principal-disable">Disable</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
